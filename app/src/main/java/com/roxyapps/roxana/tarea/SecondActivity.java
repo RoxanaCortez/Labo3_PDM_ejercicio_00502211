@@ -21,7 +21,7 @@ public class SecondActivity extends AppCompatActivity {
         TvPass = findViewById(R.id.tv_password);
         TvEmail = findViewById(R.id.tv_email);
         TvGender = findViewById(R.id.tv_gender);
-
+        BtShare = findViewById(R.id.bt_share);
 
         Intent mIntent = this.getIntent();
         if(mIntent != null){
@@ -30,5 +30,19 @@ public class SecondActivity extends AppCompatActivity {
             TvEmail.setText(mIntent.getStringExtra(AppConstants.TEXT_EMAIL));
             TvGender.setText(mIntent.getStringExtra(AppConstants.TEXT_GENDER));
         }
+
+        //Intent implicito completo
+        BtShare.setOnClickListener(v->{
+            Intent secondIntent = new Intent();
+            secondIntent.setAction(Intent.ACTION_SEND);
+            secondIntent.setType("text/plain");
+
+            secondIntent.putExtra(Intent.EXTRA_TEXT,"\nUsername: "+TvName.getText().toString()
+                                                    +"\nPassword: "+TvPass.getText().toString()
+                                                    +"\nEmail: "+TvEmail.getText().toString()
+                                                    +"\nGender: "+TvGender.getText().toString());
+
+            startActivity(secondIntent);
+        });
     }
 }
