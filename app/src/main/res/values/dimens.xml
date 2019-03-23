@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padd_general">8dp</dimen>
+    <dimen name="margin_principal">8dp</dimen>
+    <dimen name="bt_ancho">49dp</dimen>
+</resources>
