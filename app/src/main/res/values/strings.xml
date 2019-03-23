@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Tarea</string>
+    <string name="bt_send">send</string>
+    <string name="txt_username">Username:</string>
+    <string name="txt_vacio" />
+    <string name="txt_password">Password:</string>
+    <string name="txt_email">Email:</string>
+    <string name="txt_gender">Gender:</string>
 </resources>

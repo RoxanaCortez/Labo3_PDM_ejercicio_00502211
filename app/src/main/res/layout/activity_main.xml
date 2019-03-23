@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_vertical"
-    android:padding="8dp"
+    android:padding="@dimen/padd_general"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -16,9 +16,9 @@
             android:id="@+id/et_Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/margin_principal"
             android:gravity="center"
-            android:hint="Username"/>
+            android:hint="@string/txt_username"/>
 
 
         <EditText
@@ -27,8 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/et_Name"
             android:gravity="center"
-            android:layout_margin="8dp"
-            android:hint="Password"/>
+            android:layout_margin="@dimen/margin_principal"
+            android:hint="@string/txt_password"/>
 
         <EditText
             android:id="@+id/et_Email"
@@ -36,8 +36,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/et_Pass"
             android:gravity="center"
-            android:layout_margin="8dp"
-            android:hint="Email"/>
+            android:layout_margin="@dimen/margin_principal"
+            android:hint="@string/txt_email"/>
 
 
         <EditText
@@ -46,8 +46,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/et_Email"
             android:gravity="center"
-            android:layout_margin="8dp"
-            android:hint="Gender"/>
+            android:layout_margin="@dimen/margin_principal"
+            android:hint="@string/txt_gender"/>
 
     </RelativeLayout>
 
@@ -55,10 +55,10 @@
         android:id="@+id/bt_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="send"
-        android:layout_margin="8dp"
+        android:text="@string/bt_send"
+        android:layout_margin="@dimen/margin_principal"
         android:background="@color/colorAccent"
-        android:textColor="#ffff"
+        android:textColor="@color/color_white"
         android:layout_gravity="center"/>
 
 </LinearLayout>

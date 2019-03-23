@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
+    android:padding="@dimen/padd_general"
     android:gravity="center_vertical"
     android:orientation="vertical"
     tools:context=".SecondActivity">
@@ -16,9 +16,9 @@
             android:id="@+id/tv_labelName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textColor="#333"
-            android:text="Username:"/>
+            android:layout_margin="@dimen/margin_principal"
+            android:textColor="@color/color_black"
+            android:text="@string/txt_username"/>
 
         <TextView
             android:id="@+id/tv_username"
@@ -26,19 +26,19 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/tv_labelName"
             android:layout_alignParentRight="true"
-            android:layout_margin="8dp"
-            android:textColor="#333"
+            android:layout_margin="@dimen/margin_principal"
+            android:textColor="@color/color_black"
             android:layout_alignBaseline="@+id/tv_labelName"
-            android:hint=""/>
+            android:hint="@string/txt_vacio"/>
 
         <TextView
             android:id="@+id/tv_labelPass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_labelName"
-            android:layout_margin="8dp"
-            android:textColor="#333"
-            android:text="Password:"/>
+            android:layout_margin="@dimen/margin_principal"
+            android:textColor="@color/color_black"
+            android:text="@string/txt_password"/>
 
         <TextView
             android:id="@+id/tv_password"
@@ -46,19 +46,19 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/tv_labelPass"
             android:layout_alignParentRight="true"
-            android:layout_margin="8dp"
-            android:textColor="#333"
+            android:layout_margin="@dimen/margin_principal"
+            android:textColor="@color/color_black"
             android:layout_alignBaseline="@+id/tv_labelPass"
-            android:hint=""/>
+            android:hint="@string/txt_vacio"/>
 
         <TextView
             android:id="@+id/tv_labelEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_labelPass"
-            android:layout_margin="8dp"
-            android:textColor="#333"
-            android:text="Email:"/>
+            android:layout_margin="@dimen/margin_principal"
+            android:textColor="@color/color_black"
+            android:text="@string/txt_email"/>
 
         <TextView
             android:id="@+id/tv_email"
@@ -66,19 +66,19 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/tv_labelEmail"
             android:layout_alignParentRight="true"
-            android:layout_margin="8dp"
-            android:textColor="#333"
+            android:layout_margin="@dimen/margin_principal"
+            android:textColor="@color/color_black"
             android:layout_alignBaseline="@+id/tv_labelEmail"
-            android:hint=""/>
+            android:hint="@string/txt_vacio"/>
 
         <TextView
             android:id="@+id/tv_labelGender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_labelEmail"
-            android:layout_margin="8dp"
-            android:textColor="#333"
-            android:text="Gender:"/>
+            android:layout_margin="@dimen/margin_principal"
+            android:textColor="@color/color_black"
+            android:text="@string/txt_gender"/>
 
         <TextView
             android:id="@+id/tv_gender"
@@ -86,18 +86,18 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/tv_labelGender"
             android:layout_alignParentRight="true"
-            android:layout_margin="8dp"
-            android:textColor="#333"
+            android:layout_margin="@dimen/margin_principal"
+            android:textColor="@color/color_black"
             android:layout_alignBaseline="@+id/tv_labelGender"
-            android:hint=""/>
+            android:hint="@string/txt_vacio"/>
     </RelativeLayout>
 
     <Button
         android:id="@+id/bt_send"
-        android:layout_width="49dp"
+        android:layout_width="@dimen/bt_ancho"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="8dp"
+        android:layout_margin="@dimen/margin_principal"
         android:drawableStart="@mipmap/icon"
         android:drawableLeft="@mipmap/icon"
         android:drawableTint="@color/colorAccent" />
