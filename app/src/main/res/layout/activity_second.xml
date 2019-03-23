@@ -93,7 +93,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/bt_send"
+        android:id="@+id/bt_share"
         android:layout_width="@dimen/bt_ancho"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
