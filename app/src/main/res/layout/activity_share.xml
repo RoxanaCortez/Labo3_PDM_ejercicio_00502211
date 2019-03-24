@@ -8,11 +8,20 @@
     android:padding="@dimen/padd_general"
     tools:context=".ShareActivity">
 
-   //Vista si los datod son compartidos con la misma app
+   /*Vista si los datod son compartidos con la misma app*/
+
+   <TextView
+       android:id="@+id/tv_title"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/txt_shared_text"
+       android:textColor="@color/colorAccent"/>
+
    <TextView
        android:id="@+id/tv_text"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_gravity="center"
-       android:textColor="@color/color_black"/>
+       android:textColor="@color/color_black"
+       android:layout_margin="@dimen/margin_med"/>
 </LinearLayout>

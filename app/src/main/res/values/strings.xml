@@ -6,4 +6,5 @@
     <string name="txt_password">Password:</string>
     <string name="txt_email">Email:</string>
     <string name="txt_gender">Gender:</string>
+    <string name="txt_shared_text">SHARED TEXT</string>
 </resources>

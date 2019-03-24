@@ -3,4 +3,5 @@
     <dimen name="padd_general">8dp</dimen>
     <dimen name="margin_principal">8dp</dimen>
     <dimen name="bt_ancho">49dp</dimen>
+    <dimen name="margin_med">16dp</dimen>
 </resources>

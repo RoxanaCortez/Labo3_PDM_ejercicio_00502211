@@ -28,6 +28,7 @@
             android:layout_below="@+id/et_Name"
             android:gravity="center"
             android:layout_margin="@dimen/margin_principal"
+            android:inputType="textPassword"
             android:hint="@string/txt_password"/>
 
         <EditText
